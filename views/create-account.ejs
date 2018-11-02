@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/public/stylesheets/style.css" />
+    <link rel="stylesheet" href="/public/stylesheets/login.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRIiHf8ZLSzIhVTGQoedYNO7pM8UQD6dk&libraries=places"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.js" ></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="/public/javascripts/controllers/index.js" charset="utf-8"></script>
+    <script src="/public/javascripts/controllers/navigation.js" charset="utf-8"></script>
+    <title>Route Finder</title>
+</head>
+
+<body>
+    <div class="navbar-fixed">
+      <nav class="master-nav-head">
+        <ul class="nav-wrapper">
+          <li class="nav-list-first nav-list" >RouteFinder</li>
+          <li class="nav-list" id="logout">Log Out</li>
+
+          <li class="nav-list explorer" id="explore-rides">Explore Rides</li>
+          <li class="nav-list" id="record-ride">Record Ride</li>
+          <li class="nav-list" id="dashboard">Dashboard</li>
+          </ul>
+      </nav>
+    </div>
+    <main class="main-container">
+        <div class="row form-container">
+            <form id="form" class="route-input" action="/login/confirm-password" method="POST">
+              <div class="input-wrapper">
+              <p class="form-text">
+                  Would you like to create an account? Create a Password!
+              </p>
+                <div class="input-field">
+                    <fieldset class="user-inputs">
+
+                        <div class="login-divs">
+                          <label class="range-slider login-label" for="password"></label>
+                          <input class="user-input-login" type="password" placeholder="Password" id="password" name="Password" required />
+                        </div>
+                        <div class="login-divs">
+                          <label class="range-slider login-label" for="confirm-password"></label>
+                          <input class="user-input-login" type="password" placeholder="Confirm password" id="confirm-password" name="Confirm password" required />
+                        </div>
+                    </fieldset>
+                    </div>
+                </div>
+                <div>
+                    <button class="btn-large" id="search-button" type="submit" name="action">Submit</button>
+                </div>
+            </form>
+            </div>
+
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <ul class="footer-list">
+          <li>
+            &copy; Jeremy Beal 2017
+          </li>
+        </ul>
+        <ul class="footer-list">
+          <li>Ride with GPS API</li>
+          <li>Google Maps Api</li>
+        </ul>
+      </div>
+    </footer>
+</body>
+
+</html>

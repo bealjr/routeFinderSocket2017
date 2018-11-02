@@ -1,0 +1,52 @@
+{
+  "name": "route-finder",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "heroku-postbuild": "knex migrate:latest",
+    "knex": "knex",
+    "start": "nodemon ./bin/www",
+    "test": "NODE_ENV=test mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bealjr85/routeFinder2017/routeFinder"
+  },
+  "dependencies": {
+    "bcrypt-as-promised": "^1.1.0",
+    "body-parser": "~1.15.2",
+    "boom": "^4.2.0",
+    "cookie-parser": "~1.4.3",
+    "cookie-session": "^2.0.0-alpha.2",
+    "debug": "~2.2.0",
+    "dotenv": "^2.0.0",
+    "ejs": "~2.5.2",
+    "express": "~4.14.0",
+    "humps": "^2.0.0",
+    "io": "^0.1.10",
+    "knex": "^0.12.6",
+    "morgan": "~1.7.0",
+    "nodemon": "^1.11.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "pg": "^6.1.0",
+    "polyline": "^0.2.0",
+    "querystring": "^0.2.0",
+    "serve-favicon": "~2.3.0",
+    "socket.io": "^1.5.1",
+    "strava-v3": "^1.12.1",
+    "url-parse": "^1.1.7",
+    "util": "^0.10.3"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "dotenv": "^2.0.0",
+    "knex-seed-file": "^0.2.0",
+    "mocha": "^3.1.2",
+    "nodemon": "^1.11.0",
+    "supertest": "^2.0.1"
+  },
+  "engines": {
+    "node": "6.3.1"
+  }
+}
