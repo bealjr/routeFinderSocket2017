@@ -6,11 +6,11 @@ Route Finder is a platform for users to discover bike rides around them, record 
 Users can record new rides on the app and view them later on their dashboard. Users can also search for new rides based on their preferred location, distance, and climb. The app also pulls in any Strava data so that they can view all of their activity and discovered rides in one place.
 
  **Home Page**
- ![Home Page](https://github.com/bealjr85/routeFinder2017/blob/master/routeFinder/public/images/readmeimages/homepage.png)
+ ![Home Page](https://github.com/bealjr85/routeFinderSocket2017/blob/master/routeFinder/public/images/readmeimages/homepage.png)
 
  **Route Explorer**
 
-![Map](https://github.com/bealjr85/routeFinder2017/blob/master/routeFinder/public/images/readmeimages/explore.png)
+![Map](https://github.com/bealjr85/routeFinderSocket2017/blob/master/routeFinder/public/images/readmeimages/explore.png)
  **Record a Ride**
 
-![Map](https://github.com/bealjr85/routeFinder2017/blob/master/routeFinder/public/images/readmeimages/record.png)
+![Map](https://github.com/bealjr85/routeFinderSocket2017/blob/master/routeFinder/public/images/readmeimages/record.png)
